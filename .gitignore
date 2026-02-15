@@ -1,0 +1,33 @@
+# === C/C++ 编译产物 ===
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+# 排除编译生成的二进制程序（通常在 bin 或 build 目录下）
+/bin/
+/build/
+
+# === Verilog & 仿真中间文件 ===
+# Verilator 产生的文件夹
+obj_dir/
+# 仿真产生的波形文件（非常占空间，不要传）
+*.vcd
+*.ghw
+*.fst
+# 仿真日志
+*.log
+
+# === Logisim 临时文件 ===
+*.circ.bak
+
+# === 操作系统与 IDE 冗余 ===
+.DS_Store
+.vscode/
+.idea/
+.nfs*
+*.swp
+
+# === 如果以后用到 NEMU，屏蔽它的临时输出 ===
+nemu-log.txt
